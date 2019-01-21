@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <evil-ad>
+      우와 정말 놀라운 광고!<br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+      Voluptatibus facere quam nulla repellendus unde obcaecati,<br>
+      quidem laudantium error asperiores rerum,<br>
+      iusto est dignissimos quia eveniet consectetur praesentium cumque repudiandae natus?
+    </evil-ad>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import EvilAd from './components/EvilAd.vue'
 
 export default {
   name: 'app',
-  components: {
-    HelloWorld
-  }
+  components: { EvilAd }
 }
 </script>
 
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+.evil-ad {
+  position: absolute;
+  top: 100px; left: 100px;
+}
+
+.evil-ad .ad-content {
+  padding: 5px;
 }
 </style>
