@@ -12,7 +12,7 @@ const rand = () => Math.random() > 0.5
 
 export default {
   name: 'EvilAd',
-  data: () => ({ a: false, b: false }),
+  data: () => ({ a: null, b: null }),
 
   mounted () {
     this.move()
